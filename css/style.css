@@ -229,6 +229,7 @@ a, a:hover {
 
 .untree_co--site-hero .site-hero-contents {
   display: block;
+  height: 320px;
 }
 
 .untree_co--site-hero .site-hero-contents .sub-text {
@@ -824,11 +825,22 @@ a, a:hover {
 .sticky-wrapper .untree_co--site-nav .logo-wrap {
   position: absolute;
   left: 0;
+  height: 100px;
+}
+
+.logo {
+  height: 56px;
+  margin-left:100px
 }
 
 @media (max-width: 767.98px) {
   .sticky-wrapper .untree_co--site-nav .logo-wrap {
     left: 15px;
+  }
+
+  .logo {
+    height: 56px;
+    margin-left:0px
   }
 }
 
@@ -845,6 +857,11 @@ a, a:hover {
 
 .sticky-wrapper .untree_co--site-nav .logo-wrap, .sticky-wrapper .untree_co--site-nav .icons-wrap {
   z-index: 1003;
+  margin-top: 45px;
+}
+
+.icons-wrap {
+  margin-top: 13px !important
 }
 
 .sticky-wrapper .untree_co--site-nav .site-nav-ul-wrap {
@@ -1258,7 +1275,7 @@ a, a:hover {
 /* Burger */
 .burger {
   width: 28px;
-  height: 32px;
+  height: 84px;
   cursor: pointer;
   position: relative;
   z-index: 1001;
