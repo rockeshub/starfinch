@@ -1280,6 +1280,7 @@ a, a:hover {
   position: relative;
   z-index: 1001;
   float: right;
+  top: 10px;
 }
 
 .burger:before, .burger span, .burger:after {
@@ -2044,6 +2045,7 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   top: 6%;
   margin-left: auto; 
   margin-right: auto; 
+  margin-top: auto;
   width: 250px; /* Need a specific value to work */
   position: absolute;
   background-color: rgba(255, 255, 255, 0.85);
@@ -2059,9 +2061,48 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
   border-radius: 5px !important;
 }
 
+@media (min-width: 992px) {
+  .book-now {
+    top: 10%;
+  }
+  .sf-modal-form.btn-display {
+    z-index: -10;
+  }
+}
+
 @media (max-width: 991.98px) {
   .book-now {
     top: 8%;
+  }
+  .sf-modal-form.btn-display {
+    z-index: -10;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .book-now {
+    top: 8%;
+  }
+  .sf-modal-form.btn-display {
+    z-index: -10;
+  }
+}
+
+@media (max-height: 667px) {
+  .book-now {
+    top: 5%;
+  }
+  .sf-modal-form.btn-display {
+    z-index: -10;
+  }
+}
+
+@media (min-height: 1024px) {
+  .book-now {
+    top: 12%;
+  }
+  .sf-modal-form.btn-display {
+    z-index: -10;
   }
 }
 
@@ -2073,3 +2114,4 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
 	border-radius: 10px 10px 10px 10px;
 	padding: 10px;
 }
+
